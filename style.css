@@ -9,7 +9,7 @@ h1 {
   border-bottom: 2px solid gray;
   padding: 20px;
   margin: 0px;
-  width: 700px;
+  width: 800px;
   display: block;
 
   font-size: 45px;
@@ -32,9 +32,9 @@ h1 {
 #we {
   font-size: 35px;
 }
-@media (max-width: 800px), (device-aspect-ratio: 9/16) {
+@media (max-width: 800px), (min-width: 320px) and (max-width: 480px) {
   h1 {
-    width: 500px;
+    width: 550px;
     font-size: 30px;
   }
   #grid {
