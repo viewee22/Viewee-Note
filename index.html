@@ -17,26 +17,84 @@
 
       gtag("config", "G-451MFQD722");
     </script>
+    <style>
+      body {
+        margin: 0px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        border-bottom: 2px solid gray;
+        padding: 20px;
+        margin: 0px;
+        width: 700px;
+        display: block;
+
+        font-size: 45px;
+        text-align: center;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+      }
+      #grid ol {
+        border-right: 2px solid gray;
+        width: 130px;
+        margin: 0px;
+        padding: 20px;
+        padding-left: 33px;
+      }
+      #grid #article {
+        padding-left: 15px;
+      }
+      #we {
+        font-size: 35px;
+      }
+      @media (max-width: 800px) {
+        h1 {
+          width: 500px;
+          font-size: 30px;
+        }
+        #grid {
+          display: block;
+        }
+        #grid ol {
+          border-right: none;
+        }
+        #we {
+          font-size: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1><a href="index.html">뷰이의 노트 Viewee's Note</a></h1>
+    <h1>
+      <a href="index.html" style="color: red"
+        >뷰이<span id="we">의</span> 노트 Viewee's Note</a
+      >
+    </h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">Houdini</a></li>
+        <li><a href="2.html">Unreal Engine</a></li>
+        <li><a href="3.html">Blender</a></li>
+      </ol>
+      <div id="article">
+        <h2>뷰이가 좋아하는 프로그램들을 소개합니다.</h2>
 
-    <ol>
-      <li><a href="1.html">Houdini</a></li>
-      <li><a href="2.html">Unreal Engine</a></li>
-      <li><a href="3.html">Blender </a></li>
-    </ol>
+        <img src="houdini.png" width="200" />
+        <img src="Blender.png" width="200" />
+        <img src="UE.png" width="100" />
 
-    <h2>뷰이가 좋아하는 프로그램들을 소개합니다.</h2>
+        <p>
+          위의 프로그램들은 <u><strong></strong>세계 최고의 3D CG 툴</u>입니다.
+        </p>
 
-    <img src="houdini.png" width="200" />
-    <img src="Blender.png" width="200" />
-    <img src="UE.png" width="100" />
-
-    <p>
-      위의 프로그램들은 <u><strong></strong>세계 최고의 3D CG 툴</u>입니다.
-    </p>
-    <p style="margin-top: 15px">한번 배워보세요!</p>
+        <p style="margin-top: 15px">한번 배워보세요!</p>
+      </div>
+    </div>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
